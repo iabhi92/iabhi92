@@ -9,7 +9,6 @@ Sydney-based Security & Backend Engineer.
 [![Skills](https://skillicons.dev/icons?i=py,ts,js,html,git&theme=dark)](https://skillicons.dev)
 
 ![Followers](https://img.shields.io/github/followers/iabhi92?style=flat-square&color=00ff41&label=Followers)
-![Repos](https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/iabhi92&label=Repos&query=public_repos&style=flat-square&color=00ff41)
 ![Profile Views](https://komarev.com/ghpvc/?username=iabhi92&style=flat-square&color=00ff41&label=Profile+Views)
 
 ```
