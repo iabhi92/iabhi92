@@ -13,6 +13,5 @@ Sydney-based Security & Backend Engineer.
 
 ```
 On GitHub since .... 2021-01-27 (5y 6m 14d)
-Editor .............. Claude Code, VS Code
-OS ................... macOS
+
 ```
