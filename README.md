@@ -1,8 +1,5 @@
 # iabhi92
 
-
-**Theme:** GitHub · **Style:** Creative · **Agent:** Full-Stack Engineer
-
 ## Header
 <p align="center">
   <picture>
@@ -10,7 +7,6 @@
     <img src="https://www.gitskins.com/api/section/hero?username=iabhi92&theme=github-dark" alt="iabhi92 hero section" />
   </picture>
 </p>
-## About Me
 Shapes the short profile story and positioning.
 <p align="center">
   <picture>
@@ -25,9 +21,7 @@ Selected stack and skill badges will be generated from the GitHub profile and RE
     <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/stack?username=iabhi92&theme=github-dark&mode=light" />
     <img src="https://www.gitskins.com/api/section/stack?username=iabhi92&theme=github-dark" alt="iabhi92 stack section" />
   </picture>
-</p>
-## GitHub Stats
-GitSkins stat widgets will use the **GitHub** theme.
+</p>.
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/stats?username=iabhi92&theme=github-dark&mode=light" />
@@ -42,15 +36,9 @@ Highlights repositories as proof of work.
     <img src="https://www.gitskins.com/api/section/projects?username=iabhi92&theme=github-dark" alt="iabhi92 projects section" />
   </picture>
 </p>
-## Heatmap
-Animated year-long contribution calendar.
-## Connect
-Contact and social links will appear here.
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/social?username=iabhi92&theme=github-dark&mode=light" />
     <img src="https://www.gitskins.com/api/section/social?username=iabhi92&theme=github-dark" alt="iabhi92 social section" />
   </picture>
 </p>
-
-<!-- Sections: Header, About Me, Skills, GitHub Stats, Projects, Heatmap, Connect -->
