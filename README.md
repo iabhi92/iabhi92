@@ -1,17 +1,59 @@
-### Hi, I'm Abhinav — [see my work at iabhi92.online](https://iabhi92.online)
+# iabhi92
 
-Sydney-based Security & Backend Engineer.
+> Memorable developer positioning.
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-iabhi92.online-00ff41?style=flat-square&logo=googlechrome&logoColor=black)](https://iabhi92.online)
-[![Email](https://img.shields.io/badge/Email-pinku2c%40gmail.com-00ff41?style=flat-square&logo=gmail&logoColor=black)](mailto:pinku2c@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-iabhi92-00ff41?style=flat-square&logo=linkedin&logoColor=black)](https://linkedin.com/in/iabhi92)
+**Theme:** GitHub · **Style:** Creative · **Agent:** Full-Stack Engineer
 
-[![Skills](https://skillicons.dev/icons?i=py,ts,js,html,git&theme=dark)](https://skillicons.dev)
+## Header
+> Editing this section in the inspector.
+Hi, I'm **iabhi92**. This README is tuned for **personal brand** with a GitHub visual system.
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/hero?username=iabhi92&theme=github-dark&mode=light" />
+    <img src="https://www.gitskins.com/api/section/hero?username=iabhi92&theme=github-dark" alt="iabhi92 hero section" />
+  </picture>
+</p>
+## About Me
+Shapes the short profile story and positioning.
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/about?username=iabhi92&theme=github-dark&mode=light" />
+    <img src="https://www.gitskins.com/api/section/about?username=iabhi92&theme=github-dark" alt="iabhi92 about section" />
+  </picture>
+</p>
+## Skills
+Selected stack and skill badges will be generated from the GitHub profile and README strategy.
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/stack?username=iabhi92&theme=github-dark&mode=light" />
+    <img src="https://www.gitskins.com/api/section/stack?username=iabhi92&theme=github-dark" alt="iabhi92 stack section" />
+  </picture>
+</p>
+## GitHub Stats
+GitSkins stat widgets will use the **GitHub** theme.
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/stats?username=iabhi92&theme=github-dark&mode=light" />
+    <img src="https://www.gitskins.com/api/section/stats?username=iabhi92&theme=github-dark" alt="iabhi92 stats section" />
+  </picture>
+</p>
+## Projects
+Highlights repositories as proof of work.
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/projects?username=iabhi92&theme=github-dark&mode=light" />
+    <img src="https://www.gitskins.com/api/section/projects?username=iabhi92&theme=github-dark" alt="iabhi92 projects section" />
+  </picture>
+</p>
+## Heatmap
+Animated year-long contribution calendar.
+## Connect
+Contact and social links will appear here.
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/social?username=iabhi92&theme=github-dark&mode=light" />
+    <img src="https://www.gitskins.com/api/section/social?username=iabhi92&theme=github-dark" alt="iabhi92 social section" />
+  </picture>
+</p>
 
-![Followers](https://img.shields.io/github/followers/iabhi92?style=flat-square&color=00ff41&label=Followers)
-![Profile Views](https://komarev.com/ghpvc/?username=iabhi92&style=flat-square&color=00ff41&label=Profile+Views)
-
-```
-On GitHub since .... 2021-01-27 (5y 6m 14d)
-
-```
+<!-- Sections: Header, About Me, Skills, GitHub Stats, Projects, Heatmap, Connect -->
