@@ -1,12 +1,9 @@
 # iabhi92
 
-> Memorable developer positioning.
 
 **Theme:** GitHub · **Style:** Creative · **Agent:** Full-Stack Engineer
 
 ## Header
-> Editing this section in the inspector.
-Hi, I'm **iabhi92**. This README is tuned for **personal brand** with a GitHub visual system.
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/hero?username=iabhi92&theme=github-dark&mode=light" />
