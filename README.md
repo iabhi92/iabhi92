@@ -2,9 +2,9 @@
 
 # Abhinav Kumar
 
-`BUILD` • `BREAK` • `DEBUG` • `SHIP`
+<kbd>BUILD</kbd> <kbd>BREAK</kbd> <kbd>DEBUG</kbd> <kbd>SHIP</kbd>
 
-<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&duration=3500&pause=700&color=39FF14&center=true&vCenter=true&width=520&lines=security+engineer;backend+developer;from-scratch+crypto;quantum+computing" alt="typewriter: security engineer / backend developer / from-scratch crypto / quantum computing" />
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&duration=2800&pause=650&color=39FF14&center=true&vCenter=true&width=620&cursorColor=39FF14&lines=security+engineer;backend+developer;crypto+built+from+scratch;breaking+RSA+on+real+IBM+quantum+hardware;end-to-end+encrypted+by+default" alt="typewriter: security engineer / backend developer / crypto built from scratch / breaking RSA on real IBM quantum hardware / end-to-end encrypted by default" />
 
 [![Profile views](https://komarev.com/ghpvc/?username=iabhi92&style=flat-square&color=39FF14&label=PROFILE+VIEWS)](https://github.com/iabhi92)
 [![Portfolio](https://img.shields.io/badge/portfolio-iabhi92.online-0D1117?style=flat-square&logo=github&logoColor=39FF14)](https://iabhi92.online)
@@ -18,6 +18,8 @@
 
 Security/backend engineer who builds crypto and security tooling **from scratch** —
 then ships it as products people can actually use.
+
+<kbd>AES-256-GCM</kbd> <kbd>PBKDF2-SHA256 · 600k iters</kbd> <kbd>Shor's algorithm</kbd> <kbd>IBM quantum hardware</kbd>
 
 - Runs [**crackrsa.com**](https://crackrsa.com) — a live demonstration of quantum computing breaking RSA, powered by a real IBM quantum machine.
 - Built [**Haven**](https://taskhavens.com) — an end-to-end-encrypted task app that is genuinely private by default.
@@ -56,7 +58,10 @@ then ships it as products people can actually use.
 
 ### `$ ./snake`
 
-<img src="snake.svg" alt="animated contribution snake" width="100%" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="snake-dark.svg">
+  <img src="snake-light.svg" alt="animated contribution snake" width="100%" />
+</picture>
 
 ### `$ connect`
 

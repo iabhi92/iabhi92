@@ -1,6 +1,8 @@
-# Generates the animated contribution snake (snake.svg) from real GitHub
-# contribution data and commits it back so the profile README always has a
-# fresh, moving snake. Runs on every push and daily.
+# Generates two theme-aware animated contribution snakes (snake-dark.svg /
+# snake-light.svg) from real GitHub contribution data and commits them back so
+# the profile README always has a fresh, moving snake that is visible in BOTH
+# light and dark mode (the README swaps them via <picture>). Runs on every push
+# and daily.
 name: generate-snake
 
 on:
@@ -20,20 +22,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Generate the snake
+      - name: Generate the snakes
         uses: Platane/snk@v3
         with:
           github_user_name: iabhi92
           outputs: |
-            dist/snake.svg?color_snake=39FF14&color_dots=161b22,1f2e1f,2f5c2f,3f9a3f,39FF14
+            dist/snake-dark.svg?color_snake=39FF14&color_dots=21262d,1f2e1f,2f5c2f,3f9a3f,39FF14
+            dist/snake-light.svg?color_snake=2ea043&color_dots=ebedf0,9be9a8,40c463,30a14e,216e39
 
-      - name: Commit it back
+      - name: Commit them back
         run: |
-          cp dist/snake.svg snake.svg
-          # note: snk writes dist/ as root; leave it, we only commit snake.svg
-          git add snake.svg
+          cp dist/snake-dark.svg snake-dark.svg
+          cp dist/snake-light.svg snake-light.svg
+          # note: snk writes dist/ as root; leave it, we only commit the two snakes
+          git add snake-dark.svg snake-light.svg
           if git diff --cached --quiet; then
-            echo "snake unchanged; nothing to commit"
+            echo "snakes unchanged; nothing to commit"
           else
             git -c user.name="github-actions[bot]" \
                 -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
