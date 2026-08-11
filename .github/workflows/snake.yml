@@ -1,0 +1,42 @@
+# Generates the animated contribution snake (snake.svg) from real GitHub
+# contribution data and commits it back so the profile README always has a
+# fresh, moving snake. Runs on every push and daily.
+name: generate-snake
+
+on:
+  schedule:
+    - cron: "17 3 * * *" # daily at 03:17 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate the snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: iabhi92
+          outputs: |
+            dist/snake.svg?color_snake=39FF14&color_dots=161b22,1f2e1f,2f5c2f,3f9a3f,39FF14
+
+      - name: Commit it back
+        run: |
+          cp dist/snake.svg snake.svg
+          rm -rf dist
+          git add snake.svg
+          if git diff --cached --quiet; then
+            echo "snake unchanged; nothing to commit"
+          else
+            git -c user.name="github-actions[bot]" \
+                -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+                commit -m "chore: refresh contribution snake animation"
+            git push
+          fi

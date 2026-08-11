@@ -4,7 +4,7 @@
 
 `BUILD` • `BREAK` • `DEBUG` • `SHIP`
 
-security engineer · backend · crypto — Sydney
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&duration=3500&pause=700&color=39FF14&center=true&vCenter=true&width=520&lines=security+engineer;backend+developer;from-scratch+crypto;quantum+computing" alt="typewriter: security engineer / backend developer / from-scratch crypto / quantum computing" />
 
 [![Profile views](https://komarev.com/ghpvc/?username=iabhi92&style=flat-square&color=39FF14&label=PROFILE+VIEWS)](https://github.com/iabhi92)
 [![Portfolio](https://img.shields.io/badge/portfolio-iabhi92.online-0D1117?style=flat-square&logo=github&logoColor=39FF14)](https://iabhi92.online)
@@ -49,9 +49,14 @@ then ships it as products people can actually use.
 ### `$ ./gh-stats`
 
 <a href="https://github.com/iabhi92">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=iabhi92&show_icons=true&hide_border=true&hide_rank=true&bg_color=0D1117&title_color=39FF14&text_color=C9D1D9&icon_color=39FF14" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=iabhi92&layout=compact&hide_border=true&bg_color=0D1117&title_color=39FF14&text_color=C9D1D9" />
+  <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=iabhi92&theme=github_dark" alt="profile activity" />
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=iabhi92&theme=github_dark" alt="languages" />
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=iabhi92&theme=github_dark" alt="commit languages" />
 </a>
+
+### `$ ./snake`
+
+<img src="snake.svg" alt="animated contribution snake" width="100%" />
 
 ### `$ connect`
 
