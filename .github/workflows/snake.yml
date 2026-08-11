@@ -30,31 +30,22 @@ jobs:
             dist/snake-dark.svg?color_snake=39FF14&color_dots=21262d,1f2e1f,2f5c2f,3f9a3f,39FF14
             dist/snake-light.svg?color_snake=2ea043&color_dots=ebedf0,9be9a8,40c463,30a14e,216e39
 
-      - name: Post-process for visibility
+      - name: Post-process and commit
         run: |
-          # snk outputs --cb as #1b1f230a (nearly transparent) which makes the
-          # grid invisible on both themes. Fix:
+          # snk writes dist/ as root, so we can't modify files there.
+          # Copy to working tree first, then post-process:
           #  1. Inject a solid background rect so the snake renders as a
           #     self-contained card (not transparent on the page).
           #  2. Replace the near-transparent cell borders with visible colors.
-          #
-          # Dark: card bg #161b22 (matches GitHub's dark contribution graph),
-          #       cell borders #30363d.
-          # Light: card bg #f6f8fa, cell borders #d0d7de.
-          DARK_RECT='<rect x="-16" y="-32" width="880" height="192" fill="#161b22"/>'
-          LIGHT_RECT='<rect x="-16" y="-32" width="880" height="192" fill="#f6f8fa"/>'
-
-          sed -i "s|<svg \(viewBox=\"[^\"]*\"[^>]*\)>|<svg \1>${DARK_RECT}|" dist/snake-dark.svg
-          sed -i 's/--cb:#1b1f230a/--cb:#30363d/' dist/snake-dark.svg
-
-          sed -i "s|<svg \(viewBox=\"[^\"]*\"[^>]*\)>|<svg \1>${LIGHT_RECT}|" dist/snake-light.svg
-          sed -i 's/--cb:#1b1f230a/--cb:#d0d7de/' dist/snake-light.svg
-
-      - name: Commit them back
-        run: |
           cp dist/snake-dark.svg snake-dark.svg
           cp dist/snake-light.svg snake-light.svg
-          # note: snk writes dist/ as root; leave it, we only commit the two snakes
+
+          sed -i 's|<svg \(viewBox="[^"]*"[^>]*\)>|<svg \1><rect x="-16" y="-32" width="880" height="192" fill="#161b22"/>|' snake-dark.svg
+          sed -i 's/--cb:#1b1f230a/--cb:#30363d/' snake-dark.svg
+
+          sed -i 's|<svg \(viewBox="[^"]*"[^>]*\)>|<svg \1><rect x="-16" y="-32" width="880" height="192" fill="#f6f8fa"/>|' snake-light.svg
+          sed -i 's/--cb:#1b1f230a/--cb:#d0d7de/' snake-light.svg
+
           git add snake-dark.svg snake-light.svg
           if git diff --cached --quiet; then
             echo "snakes unchanged; nothing to commit"
