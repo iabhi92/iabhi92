@@ -30,6 +30,14 @@ jobs:
             dist/snake-dark.svg?color_snake=39FF14&color_dots=21262d,1f2e1f,2f5c2f,3f9a3f,39FF14
             dist/snake-light.svg?color_snake=2ea043&color_dots=ebedf0,9be9a8,40c463,30a14e,216e39
 
+      - name: Fix cell borders for visibility
+        run: |
+          # snk outputs --cb as #1b1f230a (nearly transparent) which makes the
+          # grid invisible on both themes. Replace with theme-native border
+          # colors so the grid reads clearly on dark AND light backgrounds.
+          sed -i 's/--cb:#1b1f230a/--cb:#30363d/' dist/snake-dark.svg   # GitHub dark border
+          sed -i 's/--cb:#1b1f230a/--cb:#d0d7de/' dist/snake-light.svg   # GitHub light border
+
       - name: Commit them back
         run: |
           cp dist/snake-dark.svg snake-dark.svg
