@@ -30,7 +30,7 @@ jobs:
       - name: Commit it back
         run: |
           cp dist/snake.svg snake.svg
-          rm -rf dist
+          # note: snk writes dist/ as root; leave it, we only commit snake.svg
           git add snake.svg
           if git diff --cached --quiet; then
             echo "snake unchanged; nothing to commit"
